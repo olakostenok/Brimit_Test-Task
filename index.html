@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brimit Test Task</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <form target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
+    <header class="header">
+        <h1 class="headline"> Brimit Test Task</h1>
+    </header>
+    <form action="index.html" class="decor" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
         <fieldset>
             <label><b>First name</b></label>
             <input type="text" name="FName">
@@ -28,35 +36,35 @@
             <label><b>Sex</b></label>
             <label>
                 Male
-                <input type="radio" name="Sex" value="Male">
+                <input class="radio" type="radio" name="Sex" value="Male">
             </label>
             <label>
                 Female
-                <input type="radio" name="Sex" value="Female">
+                <input class="radio" type="radio" name="Sex" value="Female">
             </label>
         </fieldset>
         <fieldset>
             <label><b>Skills</b></label>
             <label>
                 HTML
-                <input type="checkbox" name="Skills" value="HTML">
+                <input class="checkbox" type="checkbox" name="Skills" value="HTML">
             </label>
             <label>
                 CSS
-                <input type="checkbox" name="Skills" value="CSS">
+                <input class="checkbox" type="checkbox" name="Skills" value="CSS">
             </label>
             <label>
                 JavaScript
-                <input type="checkbox" name="Skills" value="JavaScript">
+                <input class="checkbox" type="checkbox" name="Skills" value="JavaScript">
             </label>
             <label>
                 AJAX
-                <input type="checkbox" name="Skills" value="AJAX">
+                <input class="checkbox" type="checkbox" name="Skills" value="AJAX">
             </label>
         </fieldset>
         <fieldset>
             <label><b>Department</b></label>
-            <select name="Department" multiple>
+            <select class="select" name="Department" multiple>
                 <option value="FrontEnd">Front End</option>
                 <option value="Sitecore">Sitecore</option>
                 <option value="SalesForce">SalesForce</option>
@@ -67,7 +75,8 @@
         <fieldset>
             <button>Submit</button>
         </fieldset>
+    </div>
     </form>
-    <script src="./tasks/tasks-solution.js"></script>
+    <script src="./assets/tasks-solution/tasks-solution.js"></script>
 </body>
 </html>
